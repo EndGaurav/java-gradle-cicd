@@ -4,7 +4,7 @@ pipeline{
         stage("static code analysis"){
             agent {
                 docker {
-                    images 'openjdk:11'
+                    image 'openjdk:11'
                 }
             }
             steps{
